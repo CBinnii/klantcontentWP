@@ -1,0 +1,64 @@
+.footer {
+    background-color: $secundary;
+    color: $white;
+    padding: 10px 0;
+
+    .contact-info {
+        .menu {
+            text-align: center;
+            font-family: 'midnight_sans', 'Open Sans', Verdana, sans-serif;
+
+            li {
+                a {
+                    color: $light;
+                    font-size: 55px;
+                    line-height: 1;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+					@media screen and (max-width: 991px) {
+						font-size: 30px;
+                        line-height: 1.2;
+					}
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+
+            li {
+                a {
+                    display: block;
+
+                    img {
+                        width: 36px;
+                        height: 36px;
+                        margin-right: 15px;
+                    }
+                }
+
+                &:last-of-type {
+                    a {
+                        img {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 14px;
+            color: $white;
+            text-align: center;
+        }
+    }
+}

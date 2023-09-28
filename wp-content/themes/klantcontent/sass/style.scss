@@ -1,0 +1,50 @@
+@import "../font-face/_font-face.scss";
+@import "mixins/_clearfix.scss";
+@import "mixins/_colunas.scss";
+@import "mixins/_vertical-align.scss";
+@import "vendor/_variables.scss";
+@import "vendor/_font-face.scss";
+@import "vendor/bootstrap/bootstrap.scss";
+@import "vendor/bootstrap/bootstrap-grid.scss";
+@import "vendor/bootstrap/bootstrap-reboot.scss";
+@import "vendor/bootstrap/bootstrap-utilities.scss";
+@import "vendor/swiper/_swiper.scss";
+@import "vendor/reset";
+
+@import "_header.scss";
+@import "_footer.scss";
+@import "_main.scss";
+@import "_button.scss";
+
+body {
+	font-family: 'Roboto', Verdana, sans-serif;
+	// font-family: 'midnight_sans', 'Open Sans', Verdana, sans-serif;
+}
+
+.desktop {
+	display: block;
+
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@media screen and (max-width: 991px) {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.mob-mb-15 {
+		margin-bottom: 15px;
+	}
+	.mob-mb-30 {
+		margin-bottom: 30px;
+	}
+	.mob-mb-45 {
+		margin-bottom: 45px;
+	}
+}
