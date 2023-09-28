@@ -11,7 +11,7 @@
 					$autor = get_sub_field('author');
 
 					$index = get_row_index();?>
-					<?php if ($index % 2 == 0) {?>
+					<?php if ($index % 2 != 0) {?>
 						<div class="type-1">
 							<div class="row">
 								<div class="col-6 image">
@@ -48,14 +48,47 @@
 	<div class="call-action">
 		<div class="container">	
 			<div class="box-action">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/customer-1.png" alt="Julius" width="250" style="display:block; margin: 0 auto; margin-bottom: 20px;">
+				<?php 
+					$image_call_to_action = get_field('image_call_to_action');
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Mauris nec pulvinar lacus. Nullam sed finibus sapien. </p>
+					if ($image_call_to_action != '') :
+				?>
+					<img src="<?php echo $image_call_to_action; ?>" alt="Julius" width="250" style="display:block; margin: 0 auto; margin-bottom: 20px;">
+				<?php endif; ?>
+
+				<?php 
+					$text_call_to_action = get_field('text_call_to_action');
+
+					if ($text_call_to_action != '') :
+				?>
+					<p><?php echo $text_call_to_action; ?></p>
+				<?php endif; ?>
 				
 				<div class="button" style="display: flex; justify-content: center;">
-					<a href="#" target="_blank" class="button-default mr-4">LOREM IPSUM</a>
-					<a href="#" target="_blank" class="button-default mr-4">LOREM IPSUM</a>
-					<a href="#" target="_blank" class="button-default">LOREM IPSUM</a>
+					<?php 
+						$first_button_call_to_action_link = get_field('first_button_call_to_action_link');
+						$first_button_call_to_action = get_field('first_button_call_to_action');
+
+						if ($first_button_call_to_action_link != '' && $first_button_call_to_action != '') :
+					?>
+						<a href="<?php echo esc_html( get_field('first_button_call_to_action_link') ); ?>" target="_blank" class="button-default mr-4"><?php echo esc_html( get_field('first_button_call_to_action') ); ?></a>
+					<?php 
+						endif;
+						$second_button_call_to_action_link = get_field('second_button_call_to_action_link');
+						$second_button_call_to_action = get_field('second_button_call_to_action');
+
+						if  ($second_button_call_to_action_link != '' && $second_button_call_to_action != '') :
+					?>
+						<a href="<?php echo esc_html( get_field('second_button_call_to_action_link') ); ?>" target="_blank" class="button-default mr-4"><?php echo esc_html( get_field('second_button_call_to_action') ); ?></a>
+					<?php 
+						endif;
+						$third_button_call_to_action_link = get_field('third_button_call_to_action_link');
+						$third_button_call_to_action = get_field('third_button_call_to_action');
+
+						if  ($third_button_call_to_action_link != '' && $third_button_call_to_action != '') :
+					?>
+						<a href="<?php echo esc_html( get_field('third_button_call_to_action_link') ); ?>" target="_blank" class="button-default"><?php echo esc_html( get_field('third_button_call_to_action') ); ?></a>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>
