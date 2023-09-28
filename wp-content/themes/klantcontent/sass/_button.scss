@@ -9,20 +9,17 @@
 
     .button-default {
         position: relative;
-        font-family: 'midnight_sans', 'Open Sans', Verdana, sans-serif;
+        font-family: 'Roboto', 'Open Sans', Verdana, sans-serif;
         background-color: $primary;
         padding: 15px 30px;
         border: none;
         border-radius: 50px;
         color: $black;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         text-transform: uppercase;
         margin-right: 15px;
         text-decoration: none;
-        font-size: 30px;
-        font-weight: 900;
+        font-size: 20px;
+        font-weight: 700;
         line-height: normal;
         letter-spacing: -0.6px;
 

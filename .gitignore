@@ -7,7 +7,7 @@
 # you can delete this whole section/until Configuration.
 /wp-content/languages
 /wp-content/themes/index.php
-/wp-content/themes/loonbedrijflolkema/.sass-cache
+/wp-content/themes/klantcontent/.sass-cache
 
 # Configuration
 wp-config.php

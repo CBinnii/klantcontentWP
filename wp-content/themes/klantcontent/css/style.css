@@ -19854,7 +19854,7 @@ input:active, input:focus, button:active, button:focus {
     max-width: 300px;
     text-align: center; }
     .main .first-layer .box-text .review {
-      font-size: 36px;
+      font-size: 26px;
       text-transform: uppercase;
       font-weight: 700;
       padding-bottom: 15px;
@@ -19900,20 +19900,17 @@ input:active, input:focus, button:active, button:focus {
       align-items: center; } }
   .button .button-default {
     position: relative;
-    font-family: 'midnight_sans', 'Open Sans', Verdana, sans-serif;
+    font-family: 'Roboto', 'Open Sans', Verdana, sans-serif;
     background-color: #8EC89A;
     padding: 15px 30px;
     border: none;
     border-radius: 50px;
     color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     text-transform: uppercase;
     margin-right: 15px;
     text-decoration: none;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 700;
     line-height: normal;
     letter-spacing: -0.6px; }
     .button .button-default:last-of-type {
