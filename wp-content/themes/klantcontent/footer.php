@@ -3,6 +3,9 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="contact-info">
+				<ul class="social-media">
+					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/google-reviews.png" width="150" alt="Google Review"></li>
+				</ul>
 				<!-- <ul class="menu">
 					<li><a href="#" target="_blank">Terms & Privacy</a></li>
 					<li><a href="#" target="_blank">Contact</a></li>

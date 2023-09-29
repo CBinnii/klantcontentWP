@@ -20,6 +20,15 @@
 								<div class="col-6 text">
 									<div class="box-text">
 										<p class="review"><?php echo $texto ?></p>
+
+										<span class="ti-stars">
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+										</span>
+										
 										<p class="customer"><?php echo $autor ?></p>
 									</div>
 								</div>
@@ -31,6 +40,15 @@
 								<div class="col-6 text">
 									<div class="box-text">
 										<p class="review"><?php echo $texto ?></p>
+
+										<span class="ti-stars">
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+											<span class="ti-star f"></span>
+										</span>
+
 										<p class="customer"><?php echo $autor ?></p>
 									</div>
 								</div>

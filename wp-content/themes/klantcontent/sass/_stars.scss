@@ -1,0 +1,19 @@
+.ti-stars {
+    margin-bottom: 15px;
+    white-space: nowrap;
+    display: block;
+
+    .ti-star {
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        margin: 0 !important;
+        margin-right: 1px !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &.f {
+            background-image: url('../images/icons/star.svg') !important;
+        }
+    }
+}
